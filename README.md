@@ -1,3 +1,21 @@
+# 用GoLang实现微服务
+
+在本文中，我们将了解一些基础的概念，术语。同时将创建我们的第一个微服务。
+
+跟随此文学习时，请务必设置合适的GOPATH，以及使用这个[git仓库](https://github.com/Alan-ZYT/Golang-Microservice/tree/master/grpc)
+
+### 必要准备
+
+- 了解Golang和它的生态圈
+- 安装gRPc/protobuf - [教程在此](https://grpc.io/docs/quickstart/go.html)
+- 安装Golang - [教程在此](https://golang.google.cn/doc/install)
+- 安装以下库 
+
+```bash
+go get -u google.golang.org/grpcgo 
+get -u github.com/golang/protobuf/protoc-gen-go
+```
+
 # 何为微服务？
 
 在传统的应用中，所有的功能都是存在于单一的代码库(Monotholic Code Base)中。在表面上看，代码库中的代码可以有几种聚合方式。可能会按照其类型分割，比如controllers, entity, factories，也有可能按照其功能拆分成几个包，比如auth, articles等等。但无论如何，整个应用是建立在一个单一代码库上的。
