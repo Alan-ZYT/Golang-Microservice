@@ -194,7 +194,7 @@ func main() {
 }
 ```
 
-在`srv`下运行`go run main.go`, 再另一个终端中，在`cli`下运行`go run main.go`, 你应该能看到一条消息`Hello world`。
+在`srv`下运行`go run main.go`, 再另一个终端中，在`cli`下运行`go run main.go`, 你应该能看到一条消息`Hello World!`。
 
 至此，我们使用protobuf和grpc创建了一个微服务以及一个客户端。
 
